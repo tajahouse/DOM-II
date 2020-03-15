@@ -44,3 +44,7 @@ bottomPic.addEventListener('mouseenter', () => {
 bottomPic.addEventListener('mouseleave', () => {
     bottomPic.style.transform = "scale(1)";
     bottomPic.style.transition = "all 0.3s"; })
+
+
+//propagation
+const eventHandler = (event) => { event.stopPropagation() };
