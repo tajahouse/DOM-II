@@ -61,6 +61,8 @@ const endSection = document.createElement('bottomSection');
 endSection.textContent = "We can Get Away!!!";
 bottom[1].appendChild(endSection);
 endSection.style.fontSize = "5rem";
+endSection.style.paddingLeft = "25%";
+endSection.style.marginsRight = "22%";
 
 
 
