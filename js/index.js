@@ -2,7 +2,8 @@
 const onHover = event => event.target.style.color = "orange";
 const navBar = document.querySelectorAll('a');
 navBar.forEach(anchors =>{
-    anchors.addEventListener('mouseover', onHover)
+    anchors.addEventListener('mouseover', onHover);
+
 });
 navBar.forEach(anchors =>{anchors.addEventListener('mouseleave', (event)=>{event.target.style.color = "black"})});
 
@@ -44,6 +45,15 @@ bottomPic.addEventListener('mouseenter', () => {
 bottomPic.addEventListener('mouseleave', () => {
     bottomPic.style.transform = "scale(1)";
     bottomPic.style.transition = "all 0.3s"; })
+
+//buttons
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach(btn =>{
+    btn.addEventListener('dblclick', function (e){
+        btn.style.color = 'orange';
+    })
+})
+//Paragraphs
 
 
 //propagation
