@@ -55,6 +55,14 @@ buttons.forEach(btn =>{
 })
 //Paragraphs
 
+//bottom
+const bottom = document.querySelectorAll('.container');
+const endSection = document.createElement('bottomSection');
+endSection.textContent = "We can Get Away!!!";
+bottom[1].appendChild(endSection);
+endSection.style.fontSize = "5rem";
+
+
 
 //propagation
 const eventHandler = (event) => { event.stopPropagation() };
