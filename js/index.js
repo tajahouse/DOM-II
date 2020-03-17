@@ -51,8 +51,22 @@ const buttons = document.querySelectorAll('.btn');
 buttons.forEach(btn =>{
     btn.addEventListener('dblclick', function (e){
         btn.style.color = 'orange';
+        btn.textContent = "Go Here!";
     })
 })
+buttons.forEach(btn =>{
+    btn.addEventListener('mouseleave',(event)=>{
+        event.target.style.color = "white";
+        event.target.textContent = "Sign Me Up!";
+    })
+});
+
+buttons.forEach(btn =>{
+    btn.addEventListener('mouseenter',(event)=>{
+        event.target.style.color = "orange";
+    })
+});
+
 //Paragraphs
 
 //bottom
@@ -63,6 +77,11 @@ bottom[1].appendChild(endSection);
 endSection.style.fontSize = "5rem";
 endSection.style.paddingLeft = "25%";
 endSection.style.marginsRight = "22%";
+
+//bottom Picture
+const lastImg = document.getElementsByClassName('lastPic');
+lastImg[0].style.paddingLeft = "15%";
+lastImg[0].style.paddingTop = "1em";
 
 
 
