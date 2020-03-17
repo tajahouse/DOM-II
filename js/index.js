@@ -82,7 +82,20 @@ endSection.style.marginsRight = "22%";
 const lastImg = document.getElementsByClassName('lastPic');
 lastImg[0].style.paddingLeft = "15%";
 lastImg[0].style.paddingTop = "1em";
-
+function zoom(event) {
+    event.preventDefault();
+  
+    scale += event.deltaY * -0.01;
+  
+    // Restrict scale
+    scale = Math.min(Math.max(.125, scale), 4);
+  
+    // Apply scale transform
+    lastImg[0].style.transform = `scale(${scale})`;
+  }
+  
+  let scale = 1;
+  lastImg[0].onwheel = zoom;
 
 
 //propagation
