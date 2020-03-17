@@ -80,7 +80,7 @@ endSection.style.marginsRight = "22%";
 
 //bottom Picture
 const lastImg = document.getElementsByClassName('lastPic');
-lastImg[0].style.paddingLeft = "15%";
+lastImg[0].style.paddingLeft = "25%";
 lastImg[0].style.paddingTop = "1em";
 function zoom(event) {
     event.preventDefault();
